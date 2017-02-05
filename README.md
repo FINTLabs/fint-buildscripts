@@ -1,9 +1,7 @@
 # Common buildscripts
 
-[![GitHub version](https://badge.fury.io/gh/FINTprosjektet%2Ffint-buildscripts.svg)](https://badge.fury.io/gh/FINTprosjektet%2Ffint-buildscripts)
-
 Common build scripts that can be used in module by using `apply from: <url to buildscript>`  
-Example url: `https://raw.githubusercontent.com/FINTprosjektet/fint-buildscripts/16-11-2016/dependencies.gradle`  (1)
+Example url: `https://raw.githubusercontent.com/FINTprosjektet/fint-buildscripts/v1.0.0/dependencies.gradle`  (1)
 
 * [xsd](#xsdgradle)
 * [bintray](#bintraygradle)
