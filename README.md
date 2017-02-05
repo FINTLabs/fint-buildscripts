@@ -1,7 +1,7 @@
 # Common buildscripts
 
 Common build scripts that can be used in module by using `apply from: <url to buildscript>`  
-Example: `https://raw.githubusercontent.com/FINTprosjektet/fint-buildscripts/v1.0.0/dependencies.gradle`  
+Example: `https://raw.githubusercontent.com/FINTlibs/fint-buildscripts/v1.0.0/dependencies.gradle`  
 
 * [xsd](#xsdgradle)
 * [bintray](#bintraygradle)
@@ -12,7 +12,7 @@ Example: `https://raw.githubusercontent.com/FINTprosjektet/fint-buildscripts/v1.
 
 ## xsd.gradle
 
-`apply from: 'https://raw.githubusercontent.com/FINTprosjektet/fint-buildscripts/<release-version>/xsd.gradle'`  
+`apply from: 'https://raw.githubusercontent.com/FINTlibs/fint-buildscripts/<release-version>/xsd.gradle'`  
 
 The xsd-files are downloaded to `src/main/resources/schema`.  
 If the `jaxb-bindings.xml` file is available in `src/main/resources/schema`, it will be used used during the code generation. If no binding-file is in the project, a default `jaxb-bindings.xml` file is downloaded.  
@@ -33,7 +33,7 @@ plugins {
 }
 ...
 if (project.hasProperty('bintrayUser') && project.hasProperty('bintrayKey')) {
-    apply from: 'https://raw.githubusercontent.com/FINTprosjektet/fint-buildscripts/<release-version>/bintray.gradle'
+    apply from: 'https://raw.githubusercontent.com/FINTlibs/fint-buildscripts/<release-version>/bintray.gradle'
 }
 
 ```
@@ -46,7 +46,7 @@ The `bintray.gradle` file will automatically set group (no.fint) and version (fr
 
 ## schemagen.gradle
 
-`apply from: 'https://raw.githubusercontent.com/FINTprosjektet/fint-buildscripts/<release-version>/schemagen.gradle'`
+`apply from: 'https://raw.githubusercontent.com/FINTlibs/fint-buildscripts/<release-version>/schemagen.gradle'`
 
 | Task | Description |
 |------|-------------|
@@ -54,7 +54,7 @@ The `bintray.gradle` file will automatically set group (no.fint) and version (fr
 
 ## dependencies.gradle
 
-`apply from: 'https://raw.githubusercontent.com/FINTprosjektet/fint-buildscripts/<release-version>/dependencies.gradle'`
+`apply from: 'https://raw.githubusercontent.com/FINTlibs/fint-buildscripts/<release-version>/dependencies.gradle'`
 
 Common library versions.  
 Apply this gradle file to set version number for project dependencies:  
