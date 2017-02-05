@@ -1,6 +1,6 @@
 # Common buildscripts
 
-[![GitHub release](https://img.shields.io/github/release/qubyte/rubidium.svg)](https://github.com/FINTprosjektet/fint-buildscripts)
+[![GitHub version](https://badge.fury.io/gh/FINTprosjektet%2Ffint-buildscripts.svg)](https://badge.fury.io/gh/FINTprosjektet%2Ffint-buildscripts)
 
 Common build scripts that can be used in module by using `apply from: <url to buildscript>`  
 Example url: `https://raw.githubusercontent.com/FINTprosjektet/fint-buildscripts/16-11-2016/dependencies.gradle`  (1)
