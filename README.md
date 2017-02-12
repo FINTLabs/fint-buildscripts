@@ -62,7 +62,15 @@ Apply this gradle file to set version number for project dependencies:
 
 | Variable name | Version |
 |---------------|---------|
+| gradleVersion | 3.3 |
 | springBootVersion | 1.4.2.RELEASE |
 | springfoxLoaderVersion |0.1.2 |
 | lombokVersion | 1.16.10 |
 | spockSpringVersion | 1.0-groovy-2.4 |
+
+To use set gradle version:  
+```
+task wrapper(type: Wrapper) {
+    gradleVersion = gradleVersion
+}
+```
