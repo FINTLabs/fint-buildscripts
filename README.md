@@ -68,7 +68,7 @@ Apply this gradle file to set version number for project dependencies:
 | lombokVersion | 1.16.14 |
 | spockSpringVersion | 1.0-groovy-2.4 |
 
-To use set gradle version:  
+To set gradle version:  
 ```
 task wrapper(type: Wrapper) {
     gradleVersion = gradleVersion
