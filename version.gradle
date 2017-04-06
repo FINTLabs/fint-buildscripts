@@ -1,0 +1,7 @@
+
+import org.ajoberstar.grgit.Grgit
+ext.createVersion = {
+    def date = new Date().format('yyyyMMdd-HHmmss')
+    def gitCommitId = Grgit.open().head().id.take(7)
+    return "${date}.${gitCommitId}"
+}

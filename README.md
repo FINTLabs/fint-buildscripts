@@ -27,7 +27,7 @@ Plugin: https://github.com/dmak/jaxb-xew-plugin
 
 ## bintray.gradle
 
-```
+```groovy
 plugins {
     id "com.jfrog.bintray" version "1.7"
 }
@@ -69,7 +69,7 @@ Apply this gradle file to set version number for project dependencies:
 | spockSpringVersion | 1.0-groovy-2.4 |
 
 To set gradle version:  
-```
+```groovy
 task wrapper(type: Wrapper) {
     gradleVersion = gradleVersion
 }
@@ -77,7 +77,7 @@ task wrapper(type: Wrapper) {
 
 ## dependencyReport.gradle
 
-```
+```groovy
 apply plugin: 'project-report'
 ```
 
@@ -87,3 +87,28 @@ apply plugin: 'project-report'
 
 Copies the dependency report into the generated jar file.
 The file dependencies.txt will be available on the classpath.
+
+## version.gradle
+
+```groovy
+buildscript {
+    ...
+    dependencies {
+        classpath 'org.ajoberstar:gradle-git:1.5.1'
+    }
+}
+```
+
+[Grgit usage](https://github.com/ajoberstar/gradle-git/wiki/Grgit-Usage)
+
+`apply from: 'https://raw.githubusercontent.com/FINTlibs/fint-buildscripts/<release-version>/version.gradle'`
+
+Use `createVersion()` to generate the version number for the project.  
+The format is `yyyyMMdd-HHmmss.abbreviatedCommitHash`, reference: https://blog.philipphauer.de/version-numbers-continuous-delivery-maven-docker/
+
+```java
+jar {
+    version = createVersion()
+    baseName = '<project-name>'
+}
+```
