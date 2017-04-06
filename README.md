@@ -81,6 +81,8 @@ task wrapper(type: Wrapper) {
 apply plugin: 'project-report'
 ```
 
+[project-reports](https://docs.gradle.org/current/userguide/project_reports_plugin.html)
+
 `apply from: 'https://raw.githubusercontent.com/FINTlibs/fint-buildscripts/<release-version>/dependencyReport.gradle'`
 
 Copies the dependency report into the generated jar file.
