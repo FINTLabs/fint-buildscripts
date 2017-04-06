@@ -92,18 +92,9 @@ The file dependencies.txt will be available on the classpath.
 
 ## version.gradle
 
-```groovy
-buildscript {
-    ...
-    dependencies {
-        classpath 'org.ajoberstar:gradle-git:1.5.1'
-    }
-}
-```
+`apply from: 'https://raw.githubusercontent.com/FINTlibs/fint-buildscripts/<release-version>/version.gradle'`
 
 [Grgit usage](https://github.com/ajoberstar/gradle-git/wiki/Grgit-Usage)
-
-`apply from: 'https://raw.githubusercontent.com/FINTlibs/fint-buildscripts/<release-version>/version.gradle'`
 
 Use `createVersion()` to generate the version number for the project.  
 The format is `yyyyMMdd-HHmmss.abbreviatedCommitHash`.  
