@@ -106,7 +106,8 @@ buildscript {
 `apply from: 'https://raw.githubusercontent.com/FINTlibs/fint-buildscripts/<release-version>/version.gradle'`
 
 Use `createVersion()` to generate the version number for the project.  
-The format is `yyyyMMdd-HHmmss.abbreviatedCommitHash`, reference: https://blog.philipphauer.de/version-numbers-continuous-delivery-maven-docker/
+The format is `yyyyMMdd-HHmmss.abbreviatedCommitHash`.  
+Reference: https://blog.philipphauer.de/version-numbers-continuous-delivery-maven-docker/
 
 ```java
 jar {
