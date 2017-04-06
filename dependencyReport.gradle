@@ -1,0 +1,9 @@
+task createDependencyReport(dependsOn: dependencyReport) << {
+    copy {
+        from "${projectReportDir}/dependencies.txt"
+        into "${sourceSets['main'].output.resourcesDir}"
+    }
+}
+
+processResources.dependsOn createDependencyReport
+processResources.mustRunAfter createDependencyReport

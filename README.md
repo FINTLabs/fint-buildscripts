@@ -74,3 +74,14 @@ task wrapper(type: Wrapper) {
     gradleVersion = gradleVersion
 }
 ```
+
+## dependencyReport.gradle
+
+```
+apply plugin: 'project-report'
+```
+
+`apply from: 'https://raw.githubusercontent.com/FINTlibs/fint-buildscripts/<release-version>/dependencyReport.gradle'`
+
+Copies the dependency report into the generated jar file.
+The file dependencies.txt will be available on the classpath.
