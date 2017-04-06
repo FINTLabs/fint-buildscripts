@@ -7,6 +7,8 @@ Example: `https://raw.githubusercontent.com/FINTlibs/fint-buildscripts/v1.0.3/de
 * [bintray](#bintraygradle)
 * [schemagen](#schemagengradle)
 * [dependencies](#dependenciesgradle)
+* [dependencyReport](#dependencyreportgradle)
+* [version](#versiongradle)
 
 ---
 
