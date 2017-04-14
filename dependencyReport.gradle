@@ -1,7 +1,9 @@
-task createDependencyReport(dependsOn: dependencyReport) << {
-    copy {
-        from "${projectReportDir}/dependencies.txt"
-        into "${sourceSets['main'].output.resourcesDir}"
+task createDependencyReport(dependsOn: dependencyReport) {
+    doLast {
+        copy {
+            from "${projectReportDir}/dependencies.txt"
+            into "${sourceSets['main'].output.resourcesDir}"
+        }
     }
 }
 
