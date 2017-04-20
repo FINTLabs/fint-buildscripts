@@ -1,7 +1,9 @@
-task createDependencyReport(dependsOn: dependencyReport) {
+dependencyUpdates.outputFormatter='json'
+
+task createDependencyReport(dependsOn: dependencyUpdates) {
     doLast {
         copy {
-            from "${projectReportDir}/dependencies.txt"
+            from "${buildDir}/dependencyUpdates/report.json"
             into "${sourceSets['main'].output.resourcesDir}"
         }
     }

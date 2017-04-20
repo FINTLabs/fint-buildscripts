@@ -80,15 +80,17 @@ task wrapper(type: Wrapper) {
 ## dependencyReport.gradle
 
 ```groovy
-apply plugin: 'project-report'
+plugins {
+    id 'com.github.ben-manes.versions' version '0.14.0'
+}
 ```
 
-[project-reports](https://docs.gradle.org/current/userguide/project_reports_plugin.html)
+[gradle-versions-plugin](https://github.com/ben-manes/gradle-versions-plugin)
 
 `apply from: 'https://raw.githubusercontent.com/FINTlibs/fint-buildscripts/<release-version>/dependencyReport.gradle'`
 
 Copies the dependency report into the generated jar file.
-The file dependencies.txt will be available on the classpath.
+The file report.json will be available on the classpath.
 
 ## version.gradle
 
