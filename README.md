@@ -66,7 +66,7 @@ Apply this gradle file to set version number for project dependencies:
 |---------------|---------|
 | gradleVersion | 3.5 |
 | springBootVersion | 1.5.3.RELEASE |
-| springfoxLoaderVersion | 1.0.0 |
+| springfoxLoaderVersion | 1.1.0 |
 | lombokVersion | 1.16.16 |
 | spockSpringVersion | 1.1-groovy-2.4 |
 
