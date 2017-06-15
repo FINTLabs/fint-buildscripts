@@ -1,7 +1,7 @@
 # Common buildscripts
 
 Common build scripts that can be used in module by using `apply from: <url to buildscript>`  
-Example: `https://raw.githubusercontent.com/FINTlibs/fint-buildscripts/v1.0.12/dependencies.gradle`  
+Example: `https://raw.githubusercontent.com/FINTlibs/fint-buildscripts/v1.0.13/dependencies.gradle`  
 
 * [xsd](#xsdgradle)
 * [bintray](#bintraygradle)
