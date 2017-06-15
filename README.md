@@ -81,7 +81,7 @@ task wrapper(type: Wrapper) {
 
 ```groovy
 plugins {
-    id 'com.github.ben-manes.versions' version '0.14.0'
+    id 'com.github.ben-manes.versions' version '0.15.0'
 }
 ```
 
