@@ -96,15 +96,13 @@ The file report.json will be available on the classpath.
 
 `apply from: 'https://raw.githubusercontent.com/FINTlibs/fint-buildscripts/<release-version>/version.gradle'`
 
-[Grgit usage](https://github.com/ajoberstar/gradle-git/wiki/Grgit-Usage)
-
-Use `createVersion()` to generate the version number for the project.  
-The format is `yyyyMMdd-HHmmss.abbreviatedCommitHash`.  
-Reference: https://blog.philipphauer.de/version-numbers-continuous-delivery-maven-docker/
+Use `createVersion()` to generate the version number for the project.  It is either taken from a file called
+`version.txt` in the project root, or in a format of `0.0.0-yyyyMMdd-HHmmss`.
+Reference: https://github.com/asgeirn/version
 
 ```java
+version = createVersion()
 jar {
-    version = createVersion()
     baseName = '<project-name>'
 }
 ```

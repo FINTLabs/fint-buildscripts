@@ -1,11 +1,9 @@
-buildscript {
-    repositories.jcenter()
-    dependencies.classpath 'org.ajoberstar:gradle-git:1.7.2'
-}
-
-import org.ajoberstar.grgit.Grgit
 ext.createVersion = {
-    def date = new Date().format('yyyyMMdd-HHmmss')
-    def gitCommitId = Grgit.open().head().id.take(7)
-    return "${date}.${gitCommitId}"
+    def versionFile = new File("version.txt")
+    if (versionFile.exists()) {
+        return versionFile.text.replaceAll("\\s","")
+    } else {
+        def date = new Date().format('yyyyMMdd-HHmmss')
+        return "0.0.0-${date}"
+    }
 }
