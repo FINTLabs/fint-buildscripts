@@ -31,7 +31,7 @@ Plugin: https://github.com/dmak/jaxb-xew-plugin
 
 ```groovy
 plugins {
-    id 'com.jfrog.bintray' version '1.7.3'
+    id 'com.jfrog.bintray' version '1.8.0'
 }
 ...
 if (project.hasProperty('bintrayUser') && project.hasProperty('bintrayKey')) {
@@ -64,10 +64,10 @@ Apply this gradle file to set version number for project dependencies:
 
 | Variable name | Version |
 |---------------|---------|
-| gradleVersion | 4.0 |
-| springBootVersion | 1.5.4.RELEASE |
+| gradleVersion | 4.1.3 |
+| springBootVersion | 1.5.8.RELEASE |
 | springfoxLoaderVersion | 1.2.0 |
-| lombokVersion | 1.16.16 |
+| lombokVersion | 1.16.18 |
 | spockSpringVersion | 1.1-groovy-2.4 |
 
 To set gradle version:  
