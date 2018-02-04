@@ -1,7 +1,7 @@
 # Common buildscripts
 
 Common build scripts that can be used in module by using `apply from: <url to buildscript>`  
-Example: `https://raw.githubusercontent.com/FINTlibs/fint-buildscripts/v1.1.0/dependencies.gradle`  
+Example: `https://raw.githubusercontent.com/FINTlibs/fint-buildscripts/v1.2.0/dependencies.gradle`  
 
 * [xsd](#xsdgradle)
 * [bintray](#bintraygradle)
@@ -64,10 +64,10 @@ Apply this gradle file to set version number for project dependencies:
 
 | Variable name | Version |
 |---------------|---------|
-| gradleVersion | 4.1.3 |
-| springBootVersion | 1.5.8.RELEASE |
-| springfoxLoaderVersion | 1.2.0 |
-| lombokVersion | 1.16.18 |
+| gradleVersion | 4.5 |
+| springBootVersion | 1.5.9.RELEASE |
+| springfoxLoaderVersion | 1.3.0 |
+| lombokVersion | 1.16.20 |
 | spockSpringVersion | 1.1-groovy-2.4 |
 
 To set gradle version:  
