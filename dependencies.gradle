@@ -5,4 +5,5 @@ ext {
     lombokVersion = '1.16.20'
     spockSpringVersion = '1.1-groovy-2.4'
     cglibVersion = '3.2.5'
+    slf4jVersion = '1.7.25'
 }
