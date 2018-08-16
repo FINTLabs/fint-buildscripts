@@ -31,7 +31,7 @@ Plugin: https://github.com/dmak/jaxb-xew-plugin
 
 ```groovy
 plugins {
-    id 'com.jfrog.bintray' version '1.8.0'
+    id 'com.jfrog.bintray' version '1.8.4'
 }
 ...
 if (project.hasProperty('bintrayUser') && project.hasProperty('bintrayKey')) {
