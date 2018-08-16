@@ -64,11 +64,13 @@ Apply this gradle file to set version number for project dependencies:
 
 | Variable name | Version |
 |---------------|---------|
-| gradleVersion | 4.5 |
-| springBootVersion | 1.5.10.RELEASE |
-| springfoxLoaderVersion | 1.3.0 |
-| lombokVersion | 1.16.20 |
+| gradleVersion | 4.9 |
+| springBootVersion | 1.5.15.RELEASE |
+| springfoxLoaderVersion | 2.0.0 |
+| lombokVersion | 1.18.2 |
 | spockSpringVersion | 1.1-groovy-2.4 |
+| cglibVersion | 3.2.7 |
+| slf4jVersion | 1.7.25 |
 
 To set gradle version:  
 ```groovy
@@ -81,7 +83,7 @@ task wrapper(type: Wrapper) {
 
 ```groovy
 plugins {
-    id 'com.github.ben-manes.versions' version '0.17.0'
+    id 'com.github.ben-manes.versions' version '0.20.0'
 }
 ```
 
