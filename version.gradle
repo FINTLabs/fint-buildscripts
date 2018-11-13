@@ -1,9 +1,0 @@
-ext.createVersion = {
-    def versionFile = new File("version.txt")
-    if (versionFile.exists()) {
-        return versionFile.text.replaceAll("\\s","")
-    } else {
-        def date = new Date().format('yyyyMMdd-HHmmss')
-        return "0.0.0-${date}"
-    }
-}
