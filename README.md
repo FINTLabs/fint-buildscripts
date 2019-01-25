@@ -1,7 +1,7 @@
 # Common buildscripts
 
 Common build scripts that can be used in module by using `apply from: <url to buildscript>`  
-Example: `https://raw.githubusercontent.com/FINTlibs/fint-buildscripts/v1.4.0/dependencies.gradle`  
+Example: `https://raw.githubusercontent.com/FINTlibs/fint-buildscripts/v1.6.0/dependencies.gradle`  
 
 * [xsd](#xsdgradle)
 * [bintray](#bintraygradle)
@@ -62,23 +62,6 @@ Common library versions.
 Apply this gradle file to set version number for project dependencies:  
 `testCompile("org.spockframework:spock-core:${spockSpringVersion}")`  
 
-| Variable name | Version |
-|---------------|---------|
-| gradleVersion | 4.9 |
-| springBootVersion | 1.5.15.RELEASE |
-| springfoxLoaderVersion | 2.0.0 |
-| lombokVersion | 1.18.2 |
-| spockSpringVersion | 1.1-groovy-2.4 |
-| cglibVersion | 3.2.7 |
-| slf4jVersion | 1.7.25 |
-
-To set gradle version:  
-```groovy
-task wrapper(type: Wrapper) {
-    gradleVersion = gradleVersion
-}
-```
-
 ## dependencyReport.gradle
 
 ```groovy
@@ -93,18 +76,3 @@ plugins {
 
 Copies the dependency report into the generated jar file.
 The file report.json will be available on the classpath.
-
-## version.gradle
-
-`apply from: 'https://raw.githubusercontent.com/FINTlibs/fint-buildscripts/<release-version>/version.gradle'`
-
-Use `createVersion()` to generate the version number for the project.  It is either taken from a file called
-`version.txt` in the project root, or in a format of `0.0.0-yyyyMMdd-HHmmss`.
-Reference: https://github.com/asgeirn/version
-
-```java
-version = createVersion()
-jar {
-    baseName = '<project-name>'
-}
-```
