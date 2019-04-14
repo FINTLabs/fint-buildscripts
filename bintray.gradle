@@ -15,7 +15,7 @@ bintray {
         userOrg = 'fint'
         name = jar.baseName
         licenses = ['Apache-2.0']
-        vcsUrl = "https://github.com/FINTprosjektet/${jar.baseName}"
+        vcsUrl = "https://github.com/FINTLabs/${jar.baseName}"
         version {
             name = jar.version
         }
