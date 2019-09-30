@@ -1,9 +1,9 @@
 ext {
     gradleVersion = '4.10.3'
-    springBootVersion = '1.5.21.RELEASE'
+    springBootVersion = '1.5.22.RELEASE'
     springfoxLoaderVersion = '2.0.0'
-    lombokVersion = '1.18.4'
+    lombokVersion = '1.18.10'
     spockSpringVersion = '1.2-groovy-2.4'
-    cglibVersion = '3.2.10'
-    slf4jVersion = '1.7.25'
+    cglibVersion = '3.3.0'
+    slf4jVersion = '1.7.28'
 }
