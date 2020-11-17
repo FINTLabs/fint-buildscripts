@@ -1,0 +1,19 @@
+apply plugin: 'maven-publish'
+
+publishing {
+    repositories {
+        maven {
+            name = 'GitHub'
+            url = uri("https://maven.pkg.github.com/FINTLabs/${name}")
+            credentials {
+                username = project.findProperty("gpr.user")
+                password = project.findProperty("gpr.key")
+            }
+        }
+    }
+    publications {
+        register("gpr") {
+            from(components["java"])
+        }
+    }
+}
