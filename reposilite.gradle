@@ -1,0 +1,23 @@
+group 'no.fint'
+
+if (project.hasProperty('reposiliteUsername') && project.hasProperty('reposiliteToken')) {
+    publishing {
+        repositories {
+            maven {
+                url "https://repo.fintlabs.no/releases"
+                credentials {
+                    username = reposiliteUsername
+                    password = reposiliteToken
+                }
+                authentication {
+                    basic(BasicAuthentication)
+                }
+            }
+        }
+        publications {
+            maven(MavenPublication) {
+                from(components.java)
+            }
+        }
+    }
+}
