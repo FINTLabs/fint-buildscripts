@@ -1,4 +1,4 @@
-group 'no.vigoiks.fint'
+group 'no.fintlabs'
 
 publishing {
     repositories {
