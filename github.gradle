@@ -1,5 +1,7 @@
 apply plugin: 'maven-publish'
 
+group 'no.fintlabs'
+
 publishing {
     repositories {
         maven {
