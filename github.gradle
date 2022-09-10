@@ -12,8 +12,8 @@ publishing {
         }
     }
     publications {
-        register("gpr") {
-            from(components["java"])
+        maven(MavenPublication) {
+            from(components.java)
         }
     }
 }
