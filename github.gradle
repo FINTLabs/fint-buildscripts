@@ -8,8 +8,8 @@ publishing {
             name = 'GitHub'
             url = uri("https://maven.pkg.github.com/FINTLabs/${rootProject.name}")
             credentials {
-                username = System.getenv("USERNAME")
-                password = System.getenv("TOKEN")
+                username = project.findProperty("gpr.user") || System.getenv("USERNAME")
+                password = project.findProperty("gpr.key") || System.getenv("TOKEN")
             }
         }
     }
